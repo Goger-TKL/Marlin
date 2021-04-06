@@ -1462,7 +1462,8 @@
 #ifdef XY2_MODELS
 #define NOZZLE_TO_PROBE_OFFSET { -50, -10, 0 }
 #else
-#define NOZZLE_TO_PROBE_OFFSET { -42, -13, -6.42 }
+// #define NOZZLE_TO_PROBE_OFFSET { -42, -13, -6.45 } //Offset für PEI Platte
+#define NOZZLE_TO_PROBE_OFFSET { -42, -13, -2.1 } //Offset für Original Tronxy Platte
 #endif
 
 // Most probes should stay away from the edges of the bed, but
@@ -2146,6 +2147,12 @@
 #define PREHEAT_2_TEMP_BED     90
 #define PREHEAT_2_TEMP_CHAMBER 35
 #define PREHEAT_2_FAN_SPEED     0 // Value from 0 to 255
+
+#define PREHEAT_3_LABEL       "BED"
+#define PREHEAT_3_TEMP_HOTEND   0
+#define PREHEAT_3_TEMP_BED     60
+#define PREHEAT_3_TEMP_CHAMBER 35
+#define PREHEAT_3_FAN_SPEED     0 // Value from 0 to 255
 
 /**
  * Nozzle Park
