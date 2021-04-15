@@ -730,7 +730,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 95 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 139.7 } //139.7 due to new extruder, old value 95
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -956,7 +956,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { -43, -8, 0 } //-43,-8 for ise CR10-S
+#define NOZZLE_TO_PROBE_OFFSET { -43, -8, -0.65 } //-43,-8,-0.65 for ise CR10-S
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
