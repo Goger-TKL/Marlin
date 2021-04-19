@@ -730,7 +730,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 139.7 } //139.7 due to new extruder, old value 95
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 137.5 } //139.7 measured for new extruder, gives too much filament. old value 95. 137.5 theretial correct value for bondtech dual drive extruder.
 
 /**
  * Default Max Feed Rate (mm/s)
